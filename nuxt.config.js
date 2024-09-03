@@ -56,6 +56,10 @@ export default {
     },
   },
 
+  router: {
+    base: '/storybook-test/'
+  },
+
   generate: {
     dir: 'docs'
   },
