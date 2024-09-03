@@ -53,6 +53,11 @@ export default {
       backgrounds: {
         default: 'light', // light or dark
       },
+      // これをtrueにしないとDescriptionが表示されない
+      controls: {
+        expanded: true
+      }
+      // layout: 'centered',
     },
   },
 

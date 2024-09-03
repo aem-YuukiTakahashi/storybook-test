@@ -1,6 +1,6 @@
 import Select from '~/components/Select';
 export default {
-  title: 'Design Select',
+  title: 'Design/System/form/Slect',
   component: Select,
   argTypes: {
     id: {
