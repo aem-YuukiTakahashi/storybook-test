@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'storybook-test',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'jp'
     },
     meta: [
       { charset: 'utf-8' },
@@ -28,14 +28,28 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  storybook: {
+    stories: ["../../storybookstories/**/*.stories.@(ts|js)"],
+    addons: [],
+    // storybookのポート指定
+    port: 4000,
+    // 背景色や表示位置、デバイスの設定など
+    parameters: {
+      // 背景色：デフォルトの色を使う場合
+      backgrounds: {
+        default: 'light', // light or dark
+      },
+    },
+  },
 }
