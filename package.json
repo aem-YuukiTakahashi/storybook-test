@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt build && npm run build:storybook",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "build:storybook": "npx nuxt-storybook build -o ./docs/storybook/"
