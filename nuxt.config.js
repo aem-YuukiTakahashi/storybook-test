@@ -1,4 +1,7 @@
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'storybook-test',
@@ -51,5 +54,9 @@ export default {
         default: 'light', // light or dark
       },
     },
+  },
+
+  generate: {
+    dir: 'docs'
   },
 }

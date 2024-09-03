@@ -32,13 +32,13 @@ export default {
 };
 
 export const DefaultSelectBox = (args, { argTypes }) => ({
-  components: { SelectBox },
+  components: { Select },
   props: Object.keys(argTypes),
-  template: `<SelectBox @selected="selected" v-bind="$props" />`,
+  template: `<Select @selected="selected" v-bind="$props" />`,
 });
 
 export const SelectBoxWithSlot = (args, { argTypes }) => ({
-  components: { SelectBox },
+  components: { Select },
   props: Object.keys(argTypes),
-  template: `<div><SelectBox @selected="selected" v-bind="$props">〜</SelectBox><SelectBox @selected="selected" v-bind="$props"/></div>`,
+  template: `<div><Select @selected="selected" v-bind="$props">〜</Select><Select @selected="selected" v-bind="$props"/></div>`,
 });
