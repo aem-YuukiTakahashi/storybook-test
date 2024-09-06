@@ -14,6 +14,10 @@
 
   div
     a.dl-btn(:href='imgList[0]' download='img1.png') Download
+
+  div
+    img(:src='imgList[1]' alt="img2")
+
 </template>
 
 <script>
@@ -22,6 +26,7 @@ export default {
     return {
       imgList: [
         "./images/img1.png",
+        "./images/img2.png",
       ]
     }
   },
