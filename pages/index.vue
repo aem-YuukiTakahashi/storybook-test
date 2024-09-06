@@ -10,13 +10,13 @@
 
 
   div
-    img(:src='imgList[0]' alt="img1")
+    img.img(:src='imgList[0]' alt="img1")
 
   div
     a.dl-btn(:href='imgList[0]' download='img1.png') Download
 
   div
-    img(:src='imgList[1]' alt="img2")
+    img.img(:src='imgList[1]' alt="img2")
 
 </template>
 
@@ -46,5 +46,10 @@ export default {
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
+}
+
+.img {
+  pointer-events: auto !important;
+  user-select: auto !important;
 }
 </style>
