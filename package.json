@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "dev:storybook": "npx nuxt storybook",
-    "build:storybook": "npx nuxt-storybook build -o ./docs/storybook/"
+    "build:storybook": "npx nuxt-storybook build -o ./public/storybook/"
   },
   "dependencies": {
     "@nuxtjs/storybook": "^4.3.2",
