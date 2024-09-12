@@ -62,10 +62,10 @@ export default {
   },
 
   router: {
-    base: '/storybook-test/'
+    base: '/storybook-test/pages'
   },
 
   generate: {
-    dir: 'docs'
+    dir: 'docs/pages'
   },
 }
