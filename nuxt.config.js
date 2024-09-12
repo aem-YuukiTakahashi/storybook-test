@@ -62,7 +62,7 @@ export default {
   },
 
   router: {
-    base: '/storybook-test/pages'
+    base: './'
   },
 
   generate: {
